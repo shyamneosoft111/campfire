@@ -1,4 +1,5 @@
 <p>CHAT ROOM</p>
+<%= link_to  destroy_user_session_path, method: :delete do %><i class="" %> Logout</i><% end %>
 <div id="message">
 	<p><%=	render @messages %></p>
 </div>
