@@ -1,9 +1,8 @@
 <p>CHAT ROOM</p>
-<%= link_to  destroy_user_session_path, method: :delete do %><i class="" %> Logout</i><% end %>
+<%= link_to  destroy_user_session_path, method: :delete do %><i class="" %> Logout(<%= current_user.email%>)</i><% end %>
 <div id="message">
 	<p><%=	render @messages %></p>
 </div>
-
 <form>
 	<label>Say Someting:</label></br>
 	<input type="text" data-behavior="room_speaker"></input>
